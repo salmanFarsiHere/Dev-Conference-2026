@@ -17,7 +17,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 20px;
+    padding: 20px 0;
     width: 100%;
 }
 nav ul{
@@ -79,6 +79,8 @@ nav ul li a{
     grid-template-columns: repeat(2, 1fr) ;
     grid-gap: 32px;
     padding: 30px 115px;
+    max-width: 80%;
+    margin: 0 auto;
 }
 .speaker-card{
     border: 1px solid lightgrey;
@@ -97,4 +99,84 @@ nav ul li a{
 .speaker-role{
     color: #1D4ED8;
     font-weight:600;
+}
+
+/* Pricing Section */
+
+.pricing-title{
+    text-align: center;
+    margin: 35px 0;
+}
+.pricing-title h3{
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.pricing-card-container{
+   display: flex;
+    gap: 26px;
+    justify-content: center;
+    margin: 48px auto;
+    max-width: 80%;
+}
+
+.pricing-card{
+    padding: 50px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    width: 25%;   
+}
+.pricing-card p, .pricing-card-pro p{
+    color: #888888;
+}
+.pricing-card-pro{
+    background-color: #0D1B2A;
+    color: white;
+    padding: 50px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    width: 25%;   
+}
+.pricing-card h2, .pricing-card-pro h2{
+    font-size: 44px;
+    font-weight: bold;
+}
+#pro-card-title{
+    color: #93C5FD;
+}
+.pricing-card hr{
+    margin: 40px 0 0;
+}
+.pricing-card-pro hr{
+    margin: 40px 0 0;
+}
+.pricing-features {
+    list-style: disc;
+    padding-left: 18px;
+    padding: 30px 0;
+}
+.pricing-features li {
+    line-height: 2;
+}
+.pricing-features li::marker {
+    color: #2563eb; 
+}
+.pricing-btn{
+    background-color: white;
+    color: #2563eb;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: 1px solid #2563eb;
+    border-radius: 10px;
+    width: 100%;
+}
+.pricing-btn-pro{
+    background-color: #1D4ED8;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
 }
