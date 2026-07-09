@@ -59,10 +59,42 @@ nav ul li a{
     padding-bottom: 30px;
 }
 .hero-container p{
-    padding-bottom: 250px;
+    padding-bottom: 100px;
 }
 .hero-container button{
     
     padding: 15px 30px;
     font-size: 24px;
+}
+
+/* Speaker styles */
+.speakers-container h2{
+    text-align: center;
+    padding: 60px 0 20px;
+    font-size: 56px;
+    font-weight: bold;
+}
+.speakers{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ;
+    grid-gap: 32px;
+    padding: 30px 115px;
+}
+.speaker-card{
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    width: 100%;
+}
+.speaker-card img{
+    width: 100%;
+}
+.speaker-card h3{
+    padding: 10px 0;
+}
+.speaker-profile{
+    padding: 10px;
+}
+.speaker-role{
+    color: #1D4ED8;
+    font-weight:600;
 }
